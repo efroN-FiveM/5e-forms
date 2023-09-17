@@ -54,7 +54,7 @@
 
 ###
 
-```<p align="left">[2] = {<br>    name = "BurgerShot", <br>    coords = vector3(-1181.188, -882.7281, 13.821201), <br>    picture="https://cdn.discordapp.com/attachments/892793331854213233/1152964296452620420/pngaaa.com-503726.png",<br>    title="Join the Burgershot", <br>    subtitle="Join the Burgershot today and make LS citizens happy!",<br>    drawtexttitle="Join Burgershot",<br>    drawtextsubtitle="Press [E] to open"<br>  },</p>```
+<p align="left">[2] = {<br>    name = "BurgerShot", <br>    coords = vector3(-1181.188, -882.7281, 13.821201), <br>    picture="https://cdn.discordapp.com/attachments/892793331854213233/1152964296452620420/pngaaa.com-503726.png",<br>    title="Join the Burgershot", <br>    subtitle="Join the Burgershot today and make LS citizens happy!",<br>    drawtexttitle="Join Burgershot",<br>    drawtextsubtitle="Press [E] to open"<br>  },</p>
 
 ###
 
