@@ -54,7 +54,19 @@
 
 ###
 
-<p align="left">[2] = {<br>    name = "BurgerShot", <br>    coords = vector3(-1181.188, -882.7281, 13.821201), <br>    picture="https://cdn.discordapp.com/attachments/892793331854213233/1152964296452620420/pngaaa.com-503726.png",<br>    title="Join the Burgershot", <br>    subtitle="Join the Burgershot today and make LS citizens happy!",<br>    drawtexttitle="Join Burgershot",<br>    drawtextsubtitle="Press [E] to open"<br>  },</p>
+<h3 align="left">1. Copy those lines and fill them. make sure to get the number up every time, name need to be exactly like in the server</h3>
+
+###
+
+<p align="left">[2] = {<br>    name = "JobName", <br>    coords = vector3(), <br>    picture="",<br>    title="Form Title", <br>    subtitle="Form Subtitle",<br>    drawtexttitle="Drawtext Title",<br>    drawtextsubtitle="Drawtext Subtitle"<br>  },</p>
+
+###
+
+<h3 align="left">2. Add new line at the server for the webhook, make sure that the name is like the name in the client</h3>
+
+###
+
+<p align="left">local Links = {<br>    LSPD = '',<br>    BurgerShot = '',<br>}</p>
 
 ###
 
