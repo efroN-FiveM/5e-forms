@@ -2,7 +2,7 @@ fx_version 'bodacious'
 game 'gta5'
 
 author '5E-Devs'
-description 'Join LSPD Form'
+description 'Join Forms'
 version '1.0.0'
 
 lua54 'yes'
@@ -20,6 +20,5 @@ server_scripts {
 files {
     'html/index.html',
     'html/style.css',
-    'html/script.js',
-    'html/images/LSPD.webp'
+    'html/script.js'
 }

@@ -2,21 +2,25 @@ $(function() {
     $(".container").hide();
 	$(".notification").hide();
     window.onload = (e) => {
-        /* 'links' the js with the Nui message from main.lua */
         window.addEventListener('message', (event) => {
             var item = event.data;
             if (item !== undefined && item.type === "ui") {
-                /* if the display is true, it will show */
                 if (item.display === true) {
 					$(".container").fadeIn();
 					$(".notification").fadeOut();
-                     /* if the display is false, it will hide */
+					$(".notification").html('<h3>' + item.dttitle + '</h3>'+
+						'<h5>' + item.dtsubtitle + '</h5>');
+					$(".header").html('<img src="' + item.img + '" alt="Logo" width="100" height="100">'+
+						'<h1>' + item.title + '</h1>'+
+						'<h2>' + item.subtitle + '</h2>');
                 } else {
 					$(".container").fadeOut();
 					$(".notification").fadeIn();
                 }
             }
 			if (item.notificationdisplay !== undefined && item.notificationdisplay === true) {
+				$(".notification").html('<h3>' + item.dttitle + '</h3>'+
+					'<h5>' + item.dtsubtitle + '</h5>');
 				$(".notification").fadeIn();
 			} else {
 				$(".notification").fadeOut();
@@ -27,7 +31,7 @@ $(function() {
              if(data.which == 27) {
                 $(".container").fadeOut();
 				$(".notification").fadeIn();
-                $.post('http://5e-lspdform/exit', JSON.stringify({}));
+                $.post('http://5e-forms/exit', JSON.stringify({}));
                 return;
             }
         };  
@@ -113,7 +117,7 @@ function submitForm(event) {
 			lookingToDo,
 		}
 		document.getElementById("lspd-form").reset();
-		$.post('http://5e-lspdform/join', JSON.stringify({data}));
+		$.post('http://5e-forms/join', JSON.stringify({data}));
 		$(".container").fadeOut()
 		$(".notification").fadeIn();
 	}
